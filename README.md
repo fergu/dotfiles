@@ -8,7 +8,7 @@ This config file is set up to use the [tmux package manager (TPM)](https://githu
 The options being set are
 
 * `base-index 1`: This makes the window numbering start at 1 instead of 0.
-* `@catppuccin_status_modules "user date_time"`: This configures catppuccin to only show the username and current time in the status bar
+* `status-right`: This is set to show the current (full) path, application, and time. The status bar is also moved to the top of the screen, which plays better with Neovim's bottom bar placement
 * `@catppuccin_window_current_text` and `@catppuccin_window_default_text` are set to `#{window_name}` to allow windows to be named according to what you're using them for instead of the current directory.
 
 This config file is set up to bootstrap itself if TPM is not already installed. This tries to be somewhat OS-aware by checking if `$XDG_DATA_HOME` is set, and if so it will install TPM to that location. Otherwise, it defaults to `$HOME/.local/share/tmux/plugins`.
