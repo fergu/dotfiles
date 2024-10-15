@@ -29,7 +29,7 @@ The plugins being loaded are all set in the `lua/plugins` directory:
 * `vimtex.lua`: The [vimtex](https://github.com/lervag/vimtex) filetype plugin, which provides useful functionality for writing LaTeX files.
 * `barbar.lua`: [Barbar](https://github.com/romgrk/barbar.nvim) for a buffer line.
 * `lualine.lua`: [Lualine](https://github.com/nvim-lualine/lualine.nvim) for the status line.
-* `julia.lua`: [Syntax highlighting](https://github.com/JuliaEditorSupport/julia-vim) for the [Julia](https://julialang.org).
+* `julia.lua`: [Syntax highlighting](https://github.com/JuliaEditorSupport/julia-vim) for the [Julia](https://julialang.org) language.
 
 ## Updates
 This README will be updated as things are added or edited
