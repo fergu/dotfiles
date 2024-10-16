@@ -1,8 +1,9 @@
+require("fergu.remap") -- Load our key remappings
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.opt.termguicolors = true
-vim.cmd.colorscheme "catppuccin"
 
 vim.opt.number = true
 vim.opt.relativenumber = true
