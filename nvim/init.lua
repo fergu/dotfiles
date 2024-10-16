@@ -1,17 +1,5 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
-require("lazy").setup("plugins")
-
+require("lazy_init") 	-- Install (if needed) and load the Lazy package manager, with packages located in the "./lua/lazy_init/plugins" directory
+require("fergu")		-- The "./lua/fergu" directory contains configuration specific to me
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -20,6 +8,7 @@ vim.opt.termguicolors = true
 vim.cmd.colorscheme "catppuccin"
 
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = false
