@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    spec = "lazy_init.plugins",
+    spec = "fergu.plugins",
     change_detection = { notify = false }
 })
