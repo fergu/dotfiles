@@ -1,7 +1,7 @@
 vim.opt.termguicolors = true 									-- Use 24 bit color
 
 vim.opt.number = true 											-- Display line numbers
-vim.opt.relativenumber = true 									-- Display line numbers relative to the currently selected line
+vim.opt.relativenumber = false 									-- Display line numbers relative to the currently selected line
 vim.opt.tabstop = 4 											-- A tab is 4 spaces
 vim.opt.shiftwidth = 4 											-- Number of spaces to use for one indent level. Set to 0 to just use the tabstop value
 vim.opt.expandtab = false 										-- Do not expand tabs as spaces
